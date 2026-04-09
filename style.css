@@ -58,6 +58,11 @@ body {
     margin: 0;
 }
 
+.service-link {
+    text-decoration: none;
+    display: block;
+}
+
 /* About Section */
 .about-section {
     padding: 80px 20px;
