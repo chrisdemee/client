@@ -19,7 +19,7 @@
         <link rel="stylesheet" href="style.css" />
     </head>
 
-    <body>
+    <body class="tax-page">
         <header>
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container">
@@ -47,37 +47,75 @@
             </nav>
         </header>
         <main>
-            <section class="hero-section">
-                <div class="container-fluid">
-                    <h1>Tax Preparation Services</h1>
-                    <p class="lead">Expert tax preparation to maximize your refunds and minimize your liabilities.</p>
+            <section class="hero-section tax-hero">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-7">
+                            <span class="badge bg-white text-primary px-3 py-2 mb-3">Trusted tax preparation</span>
+                            <h1>Tax Preparation Services</h1>
+                            <p class="lead">Expert tax preparation to maximize your refunds and minimize your liabilities.</p>
+                            <div class="mt-4">
+                                <a class="btn btn-light btn-lg me-2" href="#services">Explore services</a>
+                                <a class="btn btn-outline-light btn-lg" href="#savings">See savings</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-5 mt-4 mt-lg-0">
+                            <div class="tax-cta">
+                                <h3 class="text-primary">Complimentary review</h3>
+                                <p>Schedule a quick assessment of your prior return and discover potential refunds you may have missed.</p>
+                                <p class="mb-0"><strong>Fast, accurate, and fully personalized.</strong></p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
-            <section class="services-section">
+            <section id="services" class="tax-intro fade-in">
                 <div class="container">
-                    <div class="row">
+                    <div class="row g-4">
                         <div class="col-md-6">
-                            <h2>Our Tax Preparation Services</h2>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item">Individual Tax Returns (Form 1040)</li>
-                                <li class="list-group-item">Small Business Tax Preparation</li>
-                                <li class="list-group-item">Self-Employed Tax Returns</li>
-                                <li class="list-group-item">Tax Planning and Strategy</li>
-                                <li class="list-group-item">Quarterly Estimated Tax Payments</li>
-                                <li class="list-group-item">Tax Audit Representation</li>
-                            </ul>
+                            <div class="card p-4">
+                                <h2>Our Tax Preparation Services</h2>
+                                <ul class="list-group list-group-flush mt-4">
+                                    <li class="list-group-item">Individual Tax Returns (Form 1040)</li>
+                                    <li class="list-group-item">Small Business Tax Preparation</li>
+                                    <li class="list-group-item">Self-Employed Tax Returns</li>
+                                    <li class="list-group-item">Tax Planning and Strategy</li>
+                                    <li class="list-group-item">Quarterly Estimated Tax Payments</li>
+                                    <li class="list-group-item">Audit Support and Representation</li>
+                                </ul>
+                            </div>
                         </div>
                         <div class="col-md-6">
-                            <h2>Why Choose Us?</h2>
-                            <p>With years of experience in tax preparation, I ensure that your tax returns are filed accurately and on time. I stay up-to-date with the latest tax laws and regulations to provide you with the best possible service.</p>
-                            <p>Benefits include:</p>
-                            <ul>
-                                <li>Maximize deductions and credits</li>
-                                <li>Minimize tax liabilities</li>
-                                <li>Personalized service</li>
-                                <li>Timely filing</li>
-                                <li>Electronic filing options</li>
-                            </ul>
+                            <div class="card p-4 tax-cta">
+                                <h2>How we help</h2>
+                                <p>We minimize your tax bill with proactive planning, accurate filing, and on-demand advice throughout the year.</p>
+                                <ul class="mb-0">
+                                    <li>Organized document review</li>
+                                    <li>Smart deduction guidance</li>
+                                    <li>Quarterly estimate management</li>
+                                    <li>Audit support and compliance checks</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-4 g-4">
+                        <div class="col-md-4">
+                            <div class="tax-stat">
+                                <h3>Fast e-filing</h3>
+                                <p>Submit returns quickly and securely to get your refund sooner.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="tax-stat">
+                                <h3>Maximized refunds</h3>
+                                <p>Every credit and deduction is reviewed so you keep more of what you earn.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="tax-stat" id="savings">
+                                <h3>Year-round support</h3>
+                                <p>Access answers and planning advice long after tax season ends.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
