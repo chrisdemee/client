@@ -282,6 +282,8 @@ body.fin-page {
 
 .book-hero p {
     max-width: 620px;
+    margin: 1rem auto 0;
+    line-height: 1.7;
 }
 
 .book-summary {
