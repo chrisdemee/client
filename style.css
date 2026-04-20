@@ -170,10 +170,24 @@ body {
     animation: bounceIn 1.5s ease-out;
 }
 
+.company-subtitle {
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin: 0.5rem 0 0 0;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+    animation: bounceIn 1.5s ease-out 0.3s both;
+    opacity: 0.9;
+}
+
 /* Services Section */
 .services-section {
     padding: 80px 20px;
     background-color: #add8e6; /* Nice light blue */
+}
+
+body.book-page .services-section {
+    background-color: #d8c2a0; /* Light brown under hero section */
 }
 
 .service-card {
@@ -270,6 +284,7 @@ body.tax-page {
     font-family: "warbler-deck", sans-serif;
     font-weight: 700;
     font-style: normal;
+    color: #B71C1C; /* Dark red text instead of blue */
 }
 
 body.book-page {
@@ -301,7 +316,7 @@ body.fin-page .services-section {
 }
 
 .tax-hero {
-    background: linear-gradient(135deg, #0c4d88 0%, #4a95d6 100%);
+    background: linear-gradient(135deg, #800000 0%, #B22222 100%); /* Maroon red gradient */
     color: #fff;
     padding: 100px 20px 60px;
 }
@@ -321,11 +336,12 @@ body.fin-page .services-section {
 .tax-intro {
     margin-top: -40px;
     padding: 40px 20px 70px;
+    background-color: #FFCDD2; /* Darker light red background */
 }
 
 .tax-intro .card {
     border-radius: 22px;
-    box-shadow: 0 20px 35px rgba(15, 64, 118, 0.12);
+    box-shadow: 0 20px 35px rgba(183, 28, 28, 0.12); /* Red shadow */
 }
 
 .tax-intro .list-group-item {
@@ -338,12 +354,12 @@ body.fin-page .services-section {
     background: #ffffff;
     padding: 24px;
     border-radius: 18px;
-    border: 1px solid rgba(12, 77, 136, 0.12);
+    border: 1px solid rgba(183, 28, 28, 0.12); /* Red tint border */
 }
 
 .tax-stat {
-    background: rgba(74, 149, 214, 0.08);
-    border-left: 5px solid #0c4d88;
+    background: rgba(244, 67, 54, 0.08); /* Light red background */
+    border-left: 5px solid #B71C1C; /* Dark red left border */
     padding: 20px;
     border-radius: 14px;
 }
@@ -401,7 +417,7 @@ body.fin-page .services-section {
 .fin-hero {
     background: linear-gradient(135deg, #a6a9a8 0%, #4caa71 100%);
     color: #fff;
-    padding: 100px 20px;
+    padding: 60px 20px;
     text-align: center;
 }
 
@@ -547,17 +563,75 @@ li {
     margin: 0 auto;
 }
 
-/* Baby Blue Button Styles */
-.btn-baby-blue {
-    background-color: #87CEEB; /* Baby blue */
-    border-color: #87CEEB;
+/* Red Button Styles */
+.btn-maroon-red {
+    background-color: #800000; /* Maroon */
+    border-color: #800000;
     color: white;
     transition: all 0.3s ease;
 }
 
-.btn-baby-blue:hover {
-    background-color: #6BB6E8; /* Darker baby blue */
-    border-color: #6BB6E8;
+.btn-maroon-red:hover {
+    background-color: #660000; /* Darker maroon */
+    border-color: #660000;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn-crimson-red {
+    background-color: #DC143C; /* Crimson */
+    border-color: #DC143C;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.btn-crimson-red:hover {
+    background-color: #B22222; /* Firebrick */
+    border-color: #B22222;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn-tomato-red {
+    background-color: #FF6347; /* Tomato */
+    border-color: #FF6347;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.btn-tomato-red:hover {
+    background-color: #FF4500; /* Orange red */
+    border-color: #FF4500;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn-outline-crimson {
+    color: #DC143C;
+    border-color: #DC143C;
+    background-color: transparent;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-crimson:hover {
+    color: white;
+    background-color: #DC143C;
+    border-color: #DC143C;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn-outline-tomato {
+    color: #FF6347;
+    border-color: #FF6347;
+    background-color: transparent;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-tomato:hover {
+    color: white;
+    background-color: #FF6347;
+    border-color: #FF6347;
     transform: scale(1.05);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
@@ -581,4 +655,79 @@ li {
 .fin-modal {
     background-color: #4CAF50; /* Green background */
     color: black; /* Black text */
+}
+
+/* Contact Page Styles */
+.contact-hero {
+    background: linear-gradient(135deg, #1e3a5f 0%, #4a6fa5 100%);
+    color: #fff;
+    padding: 100px 20px 60px;
+}
+
+.contact-section {
+    padding: 80px 20px;
+    background-color: #B3DDF2; /* Baby blue under hero section */
+}
+
+.contact-form-card {
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 40px;
+    box-shadow: 0 14px 28px rgba(30, 58, 95, 0.1);
+    border: 1px solid rgba(30, 58, 95, 0.08);
+}
+
+.contact-form .form-label {
+    font-weight: 600;
+    color: #1e3a5f;
+    margin-bottom: 0.5rem;
+}
+
+.contact-form .form-control,
+.contact-form .form-select {
+    border: 2px solid #e9ecef;
+    border-radius: 8px;
+    padding: 0.75rem;
+    font-size: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-form .form-control:focus,
+.contact-form .form-select:focus {
+    border-color: #4a6fa5;
+    box-shadow: 0 0 0 0.2rem rgba(74, 111, 165, 0.15);
+}
+
+.contact-form .btn-primary {
+    background-color: #4a6fa5;
+    border-color: #4a6fa5;
+    padding: 0.75rem 2rem;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.contact-form .btn-primary:hover {
+    background-color: #3a5a8a;
+    border-color: #3a5a8a;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(74, 111, 165, 0.3);
+}
+
+#formMessage {
+    padding: 1rem;
+    border-radius: 8px;
+    font-weight: 500;
+}
+
+#formMessage.success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+#formMessage.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
 }

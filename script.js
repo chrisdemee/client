@@ -89,6 +89,54 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
+    // Contact Page: Form handling
+    if (body.classList.contains('contact-page')) {
+        const contactForm = document.getElementById('contactForm');
+        const formMessage = document.getElementById('formMessage');
+
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            // Get form values
+            const firstName = document.getElementById('firstName').value;
+            const lastName = document.getElementById('lastName').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            const subject = document.getElementById('subject').value;
+            const message = document.getElementById('message').value;
+
+            // Basic validation
+            if (!firstName || !lastName || !email || !subject || !message) {
+                showFormMessage('Please fill in all required fields.', 'error');
+                return;
+            }
+
+            // Email validation
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                showFormMessage('Please enter a valid email address.', 'error');
+                return;
+            }
+
+            // Simulate form submission (in a real app, this would send to a server)
+            showFormMessage('Thank you for your message! We\'ll get back to you within 24 hours.', 'success');
+
+            // Reset form
+            contactForm.reset();
+        });
+
+        function showFormMessage(message, type) {
+            formMessage.textContent = message;
+            formMessage.className = type;
+            formMessage.style.display = 'block';
+
+            // Hide message after 5 seconds
+            setTimeout(() => {
+                formMessage.style.display = 'none';
+            }, 5000);
+        }
+    }
+
     // Global scroll effect: Fade in elements with class 'fade-in'
     const fadeObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
