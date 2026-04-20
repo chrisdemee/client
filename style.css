@@ -394,7 +394,8 @@ body.fin-page {
 }
 
 .fin-timeline,
-.fin-strategy {
+.fin-strategy,
+.advisory-services {
     padding: 70px 20px;
 }
 
@@ -418,6 +419,39 @@ body.fin-page {
     box-shadow: 0 14px 28px rgba(76, 170, 113, 0.08);
 }
 
+.advisory-card {
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 28px;
+    border: 1px solid rgba(12, 106, 63, 0.12);
+    box-shadow: 0 14px 28px rgba(12, 106, 63, 0.08);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.advisory-card:hover {
+    box-shadow: 0 18px 36px rgba(12, 106, 63, 0.15);
+    transform: translateY(-4px);
+}
+
+.advisory-card h3 {
+    color: #0c6a3f;
+    margin-bottom: 1rem;
+}
+
+.advisory-highlight {
+    background: linear-gradient(135deg, #f0fdf4 0%, #f7fbf5 100%);
+    border: 1px solid rgba(12, 106, 63, 0.15);
+    border-radius: 18px;
+}
+
+.advisory-highlight h3 {
+    color: #0c6a3f;
+}
+
+.advisory-highlight ul li {
+    color: #1f3d7a;
+}
+
 .fin-quote {
     background: #fff;
     padding: 40px;
@@ -439,7 +473,53 @@ body.fin-page {
 }
 
 p {
-    font-family: "warbler-deck", sans-serif;
-font-weight: 400;
-font-style: normal;
+    font-family: "bahnschrift", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+li {
+    font-family: "bahnschrift", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+/* Benefits Carousel Styles */
+#benefitsCarousel .carousel-item p {
+    text-align: center;
+    font-size: 1.1rem;
+    margin: 20px 0;
+}
+
+#benefitsCarousel .carousel-control-prev-icon {
+    background-image: none;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-right: 20px solid black;
+    border-left: none;
+    width: 0;
+    height: 0;
+    margin: auto;
+}
+
+#benefitsCarousel .carousel-control-next-icon {
+    background-image: none;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 20px solid black;
+    border-right: none;
+    width: 0;
+    height: 0;
+    margin: auto;
+}
+
+#benefitsCarousel .carousel-control-prev,
+#benefitsCarousel .carousel-control-next {
+    width: 5%;
+    opacity: 1;
+}
+
+#benefitsCarousel {
+    max-width: 600px;
+    margin: 0 auto;
 }
