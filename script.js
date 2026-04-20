@@ -42,6 +42,28 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
         document.querySelectorAll('.tax-cta, .tax-stat').forEach(el => observer.observe(el));
+
+        // Review Generator
+        const reviews = [
+            { title: "Small Business Owner", text: "JCD Associates helped me save over $5,000 on my business taxes this year. Their attention to detail and proactive approach made all the difference. Highly recommend!", strong: "Outstanding service and results!" },
+            { title: "Real Estate Investor", text: "I've been working with JCD for 3 years now. They handle all my complex tax situations with ease and always find ways to maximize my deductions. Professional and trustworthy.", strong: "Reliable and knowledgeable team." },
+            { title: "Startup Founder", text: "As a new business owner, I was overwhelmed with tax requirements. JCD guided me through every step and helped structure my business for optimal tax benefits. Worth every penny!", strong: "Invaluable guidance for entrepreneurs." },
+            { title: "Family Business Owner", text: "JCD has been our family's CPA for over a decade. Their year-round support and strategic planning have helped grow our business significantly. Can't imagine working with anyone else.", strong: "Long-term trusted advisors." }
+        ];
+
+        let currentReviewIndex = 0;
+        const generateBtn = document.getElementById('generate-review-btn');
+        const reviewTitle = document.getElementById('review-title');
+        const reviewText = document.getElementById('review-text');
+        const reviewStrong = document.getElementById('review-strong');
+
+        generateBtn.addEventListener('click', () => {
+            currentReviewIndex = (currentReviewIndex + 1) % reviews.length;
+            const review = reviews[currentReviewIndex];
+            reviewTitle.textContent = review.title;
+            reviewText.textContent = review.text;
+            reviewStrong.innerHTML = `<strong>${review.strong}</strong>`;
+        });
     } else if (body.classList.contains('book-page')) {
         // Book page: Hover effect on feature-cards
         document.querySelectorAll('.feature-card').forEach(card => {

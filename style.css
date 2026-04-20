@@ -173,7 +173,7 @@ body {
 /* Services Section */
 .services-section {
     padding: 80px 20px;
-    background-color: #e7effc;
+    background-color: #add8e6; /* Nice light blue */
 }
 
 .service-card {
@@ -213,7 +213,7 @@ body {
 /* About Section */
 .about-section {
     padding: 80px 20px;
-    background-color: #eaf2fb;
+    background-color: #add8e6; /* Nice light blue */
 }
 
 .about-image {
@@ -267,15 +267,37 @@ h1 {
 }
 
 body.tax-page {
-    background: linear-gradient(180deg, #eef7ff 0%, #fff 100%);
+    font-family: "warbler-deck", sans-serif;
+    font-weight: 700;
+    font-style: normal;
 }
 
 body.book-page {
     background: linear-gradient(180deg, #f7f4ef 0%, #fff 100%);
 }
 
+body.book-page h1,
+body.book-page h2,
+body.book-page h3 {
+    font-family: "warbler-deck", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
 body.fin-page {
     background: linear-gradient(180deg, #f2f7f2 0%, #fff 100%);
+}
+
+body.fin-page h1,
+body.fin-page h2,
+body.fin-page h3 {
+    font-family: "warbler-deck", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+body.fin-page .services-section {
+    background-color: #e8f5e8; /* Nice light green */
 }
 
 .tax-hero {
@@ -397,6 +419,7 @@ body.fin-page {
 .fin-strategy,
 .advisory-services {
     padding: 70px 20px;
+    background-color: #e8f5e8; /* Nice light green */
 }
 
 .timeline-item {
@@ -522,4 +545,40 @@ li {
 #benefitsCarousel {
     max-width: 600px;
     margin: 0 auto;
+}
+
+/* Baby Blue Button Styles */
+.btn-baby-blue {
+    background-color: #87CEEB; /* Baby blue */
+    border-color: #87CEEB;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.btn-baby-blue:hover {
+    background-color: #6BB6E8; /* Darker baby blue */
+    border-color: #6BB6E8;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Light Green Button Styles */
+.btn-light-green {
+    background-color: #90EE90; /* Light green */
+    border-color: #90EE90;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.btn-light-green:hover {
+    background-color: #32CD32; /* Lime green, darker */
+    border-color: #32CD32;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Fin Modal Styles */
+.fin-modal {
+    background-color: #4CAF50; /* Green background */
+    color: black; /* Black text */
 }

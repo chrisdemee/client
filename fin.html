@@ -30,7 +30,7 @@
                             <a class="nav-card" href="book.html">Bookkeeping</a>
                             <a class="nav-card active" href="fin.html">Advisory</a>
                         </nav>
-                        <div>
+                        <div class="text-center">
                             <h1>Advisory</h1>
                             <p class="lead">Strategic financial advice to help you achieve your goals and secure your future.</p>
                             <p>Customized strategies for business growth, retirement planning, and long-term wealth management.</p>
@@ -38,8 +38,8 @@
                     </div>
                 </div>
             </section>
-            <section class="advisory-services fade-in">
-                <div class="container">
+            <section class="advisory-services">
+                <div class="container text-center">
                     <h2 class="mb-5">Business Advisory Services</h2>
                     <p class="lead mb-4">As your trusted CPA advisor, I help businesses navigate complex financial decisions and achieve sustainable growth. Whether you're starting out, expanding, or planning for the future, I provide strategic guidance on the issues that matter most to your success.</p>
                     
@@ -47,37 +47,37 @@
                         <div class="col-md-6">
                             <div class="advisory-card">
                                 <h3>Business Structure & Formation</h3>
-                                <p>Get guidance on choosing the right business entity (S-Corp, C-Corp, LLC, Partnership) to minimize taxes and protect your personal assets. I'll help you understand the implications of each structure and navigate the setup process.</p>
+                                <button class="btn btn-light-green d-block mx-auto" data-bs-toggle="modal" data-bs-target="#modal1">More</button>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="advisory-card">
                                 <h3>Financial Planning & Analysis</h3>
-                                <p>Develop comprehensive financial forecasts, cash flow projections, and profitability analysis. Understanding your numbers empowers better business decisions and attracts potential investors or lenders.</p>
+                                <button class="btn btn-light-green d-block mx-auto" data-bs-toggle="modal" data-bs-target="#modal2">More</button>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="advisory-card">
                                 <h3>Cost Management & Efficiency</h3>
-                                <p>Identify opportunities to reduce expenses, improve margins, and increase profitability. I analyze your operations to find savings without sacrificing growth or quality.</p>
+                                <button class="btn btn-light-green d-block mx-auto" data-bs-toggle="modal" data-bs-target="#modal3">More</button>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="advisory-card">
                                 <h3>Succession & Exit Planning</h3>
-                                <p>Plan for business transitions, ownership changes, or sale. Whether you're thinking years ahead or planning for retirement, I help structure the process to maximize value and minimize tax impact.</p>
+                                <button class="btn btn-light-green d-block mx-auto" data-bs-toggle="modal" data-bs-target="#modal4">More</button>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="advisory-card">
                                 <h3>Debt & Capital Strategy</h3>
-                                <p>Evaluate financing options, manage debt levels, and structure capital to support growth. I help you understand loan terms, negotiate better rates, and maintain healthy debt ratios.</p>
+                                <button class="btn btn-light-green d-block mx-auto" data-bs-toggle="modal" data-bs-target="#modal5">More</button>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="advisory-card">
                                 <h3>Tax Strategy & Planning</h3>
-                                <p>Develop proactive tax strategies to minimize liabilities throughout the year. From timing decisions to entity selection, I ensure you're not paying more tax than necessary.</p>
+                                <button class="btn btn-light-green d-block mx-auto" data-bs-toggle="modal" data-bs-target="#modal6">More</button>
                             </div>
                         </div>
                     </div>
@@ -96,13 +96,99 @@
                 </div>
             </section>
             <section class="services-section">
-                <div class="container">
+                <div class="container text-center">
                     <div class="fin-quote mx-auto text-center">
                         <p class="mb-3"><strong>"Business success isn't just about managing today's finances—it's about making strategic decisions that position you for long-term growth and profitability."</strong></p>
                         <p class="mb-0">Let's discuss how tailored advisory services can unlock opportunities for your business and help you achieve your financial goals.</p>
                     </div>
                 </div>
             </section>
+
+            <!-- Modals for Advisory Cards -->
+            <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content fin-modal">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modal1Label">Business Structure & Formation</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body text-center">
+                            <p>Get guidance on choosing the right business entity (S-Corp, C-Corp, LLC, Partnership) to minimize taxes and protect your personal assets. I'll help you understand the implications of each structure and navigate the setup process.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="modal2Label" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content fin-modal">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modal2Label">Financial Planning & Analysis</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body text-center">
+                            <p>Develop comprehensive financial forecasts, cash flow projections, and profitability analysis. Understanding your numbers empowers better business decisions and attracts potential investors or lenders.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="modal3Label" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content fin-modal">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modal3Label">Cost Management & Efficiency</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body text-center">
+                            <p>Identify opportunities to reduce expenses, improve margins, and increase profitability. I analyze your operations to find savings without sacrificing growth or quality.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="modal4" tabindex="-1" aria-labelledby="modal4Label" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content fin-modal">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modal4Label">Succession & Exit Planning</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body text-center">
+                            <p>Plan for business transitions, ownership changes, or sale. Whether you're thinking years ahead or planning for retirement, I help structure the process to maximize value and minimize tax impact.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="modal5" tabindex="-1" aria-labelledby="modal5Label" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content fin-modal">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modal5Label">Debt & Capital Strategy</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body text-center">
+                            <p>Evaluate financing options, manage debt levels, and structure capital to support growth. I help you understand loan terms, negotiate better rates, and maintain healthy debt ratios.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="modal6" tabindex="-1" aria-labelledby="modal6Label" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content fin-modal">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modal6Label">Tax Strategy & Planning</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body text-center">
+                            <p>Develop proactive tax strategies to minimize liabilities throughout the year. From timing decisions to entity selection, I ensure you're not paying more tax than necessary.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </main>
         <footer class="bg-light text-center py-4">
             <div class="container">

@@ -45,27 +45,72 @@
                         </div>
                         <div class="col-lg-5 mt-4 mt-lg-0">
                             <div class="tax-cta">
-                                <h3 class="text-primary">Complimentary review</h3>
-                                <p>Schedule a quick assessment of your prior return and discover potential refunds you may have missed.</p>
-                                <p class="mb-0"><strong>Fast, accurate, and fully personalized.</strong></p>
+                                <div id="review-display">
+                                    <h3 class="text-dark" id="review-title">Complimentary Review</h3>
+                                    <p class="text-dark" id="review-text">Schedule a quick assessment of your prior return and discover potential refunds you may have missed.</p>
+                                    <p class="mb-0 text-dark" id="review-strong"><strong>Fast, accurate, and fully personalized.</strong></p>
+                                </div>
+                                <button id="generate-review-btn" class="btn btn-baby-blue mt-3">Generate New Review</button>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <section id="services" class="tax-intro">
+            <section id="services" class="tax-intro mt-5">
                 <div class="container">
                     <div class="row g-4">
                         <div class="col-md-6">
                             <div class="card p-4">
-                                <h2>JCD's Tax Preparation Services</h2>
-                                <ul class="list-group list-group-flush mt-4">
-                                    <li class="list-group-item">Personal Tax Services</li>
-                                    <li class="list-group-item">Trust Tax Services</li>
-                                    <li class="list-group-item">Business Tax Services</li>
-                                    <li class="list-group-item">Corporate Tax Services</li>
-                                    <li class="list-group-item">Partnership Tax Services</li>
-                                </ul>
+                                <h2 class="text-center">JCD's Tax Preparation Services</h2>
+                                <div id="taxServicesCarousel" class="carousel slide mx-auto mt-4" style="max-width: 500px;" data-bs-ride="carousel">
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#taxServicesCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#taxServicesCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                        <button type="button" data-bs-target="#taxServicesCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                        <button type="button" data-bs-target="#taxServicesCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                        <button type="button" data-bs-target="#taxServicesCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                                    </div>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="https://stewardingram.com/wp-content/uploads/2023/11/tax-preparation-in-Raleigh-NC.webp" class="d-block w-100" alt="Personal Tax Services" style="height: 300px; object-fit: cover;">
+                                            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+                                                <h5>Personal Tax Services</h5>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="https://www.schultz-cpa.com/wp-content/uploads/2023/10/case-study-2.jpg" class="d-block w-100" alt="Trust Tax Services" style="height: 300px; object-fit: cover;">
+                                            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+                                                <h5>Trust Tax Services</h5>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="https://www.taxgroupcenter.com/wp-content/uploads/2021/08/Business-Tax-Preparation-Services.jpg" class="d-block w-100" alt="Business Tax Services" style="height: 300px; object-fit: cover;">
+                                            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+                                                <h5>Business Tax Services</h5>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="https://dhjj.com/wp-content/uploads/2022/05/corporate-taxes.png" class="d-block w-100" alt="Corporate Tax Services" style="height: 300px; object-fit: cover;">
+                                            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+                                                <h5>Corporate Tax Services</h5>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="https://mahreentax.com/wp-content/uploads/2022/10/Tax-Service.jpg" class="d-block w-100" alt="Partnership Tax Services" style="height: 300px; object-fit: cover;">
+                                            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+                                                <h5>Partnership Tax Services</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#taxServicesCarousel" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#taxServicesCarousel" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
                             </div>
                         </div>
                         <div class="col-md-6">
@@ -121,5 +166,6 @@
             integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
             crossorigin="anonymous"
         ></script>
+        <script src="script.js"></script>
     </body>
 </html>
