@@ -111,14 +111,14 @@ document.addEventListener('DOMContentLoaded', function() {
                 return;
             }
 
-            // Email validation
+            // Email validation: MAKES SURE ITS A VALID EMAIL ADDRESS
             const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
             if (!emailRegex.test(email)) {
                 showFormMessage('Please enter a valid email address.', 'error');
                 return;
             }
 
-            // Simulate form submission (in a real app, this would send to a server)
+            // Simulate form submission 
             showFormMessage('Thank you for your message! We\'ll get back to you within 24 hours.', 'success');
 
             // Reset form
